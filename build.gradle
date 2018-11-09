@@ -1,0 +1,78 @@
+plugins {
+    id 'java'
+ //   id 'application'
+   // id 'idea'
+    id 'com.avast.gradle.docker-compose' version '0.7.1'
+
+}
+group 'spider'
+version '1.0-SNAPSHOT'
+
+dockerCompose {
+    isRequiredBy(project.tasks.test)
+    exposeAsSystemProperties(project.tasks.test)
+}
+
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+//mainClassName = 'CorrectLogIn'
+
+dependencies {
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.14.0'
+    //testCompile 'junit:junit:4.12'
+    compile 'junit:junit:4.12'
+}
+
+//docker {
+//    javaApplication {
+//        baseImage = 'openjdk:latest'
+//        tag = 'java-app:gradle'
+//    }
+//}
+//test{
+//
+//    useJUnit()
+//     testLogging.showStandardStreams = true
+//    include 'CorrectLogIn'
+//
+//}
+
+//jar {
+//    baseName = 'gAAAAAAAAAAAAAAgradle'
+//    version =  '0.1.0'
+//        manifest {
+//            attributes(
+//                    'Main-Class': 'tests.loginTests.CorrectLogIn'
+//            )
+//        }
+//}
+
+//task one{
+//    task sampleTest(type: Test) {
+//        filter { includeTestsMatching "*userLogin" }
+//    }
+//}
+//
+// test {
+//    useJUnit()
+//    }
+
+//
+//
+//}
+//task integrationTest(type: Test) {
+//    useJUnit {
+//        includeCategories 'com.tomasulo.sample.IntegrationTest'
+//    }
+//}
+//
+//testClasses{
+//
+//
+//
+//}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CoordinatorsWeb.iml" filepath="$PROJECT_DIR$/.idea/modules/CoordinatorsWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CoordinatorsWeb_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CoordinatorsWeb_main.iml" group="CoordinatorsWeb" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CoordinatorsWeb_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CoordinatorsWeb_test.iml" group="CoordinatorsWeb" />
+    </modules>
+  </component>
+</project>
